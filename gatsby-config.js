@@ -53,5 +53,6 @@ module.exports = {
         currency: "aud",
       },
     },
+    "gatsby-plugin-layout",
   ],
 };
