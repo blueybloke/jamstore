@@ -35,5 +35,7 @@ module.exports = {
       },
       __key: "images",
     },
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-preact",
   ],
 };

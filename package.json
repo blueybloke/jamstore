@@ -12,7 +12,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "storybook": "NODE_ENV=production start-storybook -s ./public -p 6006 --ci",
+    "build-storybook": "NODE_ENV=production build-storybook"
   },
   "dependencies": {
     "gatsby": "^2.32.8",
@@ -20,14 +22,36 @@
     "gatsby-plugin-google-analytics": "^2.11.0",
     "gatsby-plugin-manifest": "^2.12.1",
     "gatsby-plugin-offline": "^3.10.2",
+    "gatsby-plugin-postcss": "^3.7.0",
+    "gatsby-plugin-preact": "^4.7.0",
     "gatsby-plugin-react-helmet": "^3.10.0",
     "gatsby-plugin-sharp": "^2.14.3",
     "gatsby-plugin-sitemap": "^2.12.0",
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-source-sanity": "^6.0.5",
     "gatsby-transformer-sharp": "^2.12.0",
+    "postcss": "^8.2.6",
+    "preact": "^10.5.12",
+    "preact-render-to-string": "^5.1.12",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "tailwindcss": "^2.0.3",
+    "typescript": "^4.2.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.8",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@storybook/addon-actions": "^6.1.20",
+    "@storybook/addon-docs": "^6.1.20",
+    "@storybook/react": "^6.1.20",
+    "@types/node": "^14.14.31",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-remove-graphql-queries": "^2.16.1",
+    "react-docgen-typescript-loader": "^3.7.2"
   }
 }
