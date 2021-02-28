@@ -23,7 +23,13 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: "GatsbyJS",
+        short_name: "GatsbyJS",
         icon: "src/images/icon.png",
+        start_url: "/",
+        background_color: "#f7f0eb",
+        theme_color: "#a2466c",
+        display: "standalone",
       },
     },
     "gatsby-transformer-sharp",
@@ -37,5 +43,16 @@ module.exports = {
     },
     "gatsby-plugin-postcss",
     "gatsby-plugin-preact",
+    "gatsby-plugin-transition-link",
+    "gatsby-plugin-layout",
+    {
+      resolve: "gatsby-plugin-snipcart-advanced",
+      options: {
+        publicApiKey:
+          "NDU2NWQzYTgtYzE0ZS00MGRlLWI5YTMtNjE2ZTIyMjgyNDZlNjM3NTAwODE0NDM3OTAwMzc1",
+        defaultLang: "",
+        currency: "aud",
+      },
+    },
   ],
 };
