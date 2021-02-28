@@ -44,7 +44,6 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-preact",
     "gatsby-plugin-transition-link",
-    "gatsby-plugin-layout",
     {
       resolve: "gatsby-plugin-snipcart-advanced",
       options: {

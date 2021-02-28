@@ -1,10 +1,10 @@
 module.exports = {
-  purge: [
-    './src/**/*.js',
-  ],
+  purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
-    extend: {}
+    fontFamily: {
+      serif: ["Inter", "sans-serif"],
+    },
   },
   variants: {},
-  plugins: []
-}
+  plugins: [],
+};
